@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-color {
+    background-image: linear-gradient(to right, #8C60E5, #C29CFF);
+}
+
+.bg-color-input {
+    background-color: rgb(238, 231, 231);
+    background: rgb(238, 231, 231);
+}
+
+.padding {
+    padding-right: 64px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
+
+.padding-form {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.padding-div {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.border-input {
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+.margin-input {
+    margin: 5px;
+}
+
+.section-display {
+    display: inline-block;
+    width:30%;
+    text-align: center;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.button {
+    background-color: #17C2D6;
+    border: 0px solid #17C2D6;
+    border-radius: 24px;
+    padding: 14px 34px;
+    margin-top: 15px;
+    display: inline-block;
+
+}
+
+.text-background {
+    background-color: #17C2D6;
+    padding-top: 120px;
+    padding-bottom: 212px;
+}
+
+.margin-section {
+    margin-top: 150px;
+}
+
+.text-section {
+    color: white;
+    text-decoration: none;
+}
+
+.border-radius-text {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0px solid black;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.font-style {
+    font-family: 'Dancing Script', cursive;
+}
