@@ -1,0 +1,246 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav h2 {
+    font-size: 36px;
+    margin-left:2%;
+}
+/* Global */
+
+.img-shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.btn {
+    color: white;
+    background-color: transparent;
+    border: white 2px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+.btn-orange {
+    color: white;
+    background-color:orange;
+    border-radius: 0px;
+    border: 0px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+/* Custom */
+
+.bg-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=pexels-pixabay-302769.jpg&fm=jpg");
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+
+.navbar {
+    background-color:black;
+    padding: 1%;
+    width: 100%;
+}
+
+.navicons {
+    background-color: white;
+    padding: 2%;
+    width: 100%;
+    display: inline-block;
+}
+
+nav ul li {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-list {
+    margin-left: 60%;
+    text-align: center;
+}
+
+.btm-border {
+    border: 0px solid grey;
+    border-bottom: 2px solid grey;
+}
+nav h2 span {
+    color: orange;
+    font-weight: lighter;
+}
+
+section div h1 {
+    font-size: 68px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+section div h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: lighter;
+    width: 80%;
+}
+
+section div hr {
+    border: none;
+    height: 3px;
+    background-color: white;
+    margin-right: 80%;
+    margin-left: 10%;
+
+}
+
+section div p {
+    color: white;
+    width: 80%
+}
+
+section form{
+    border: 0px solid grey;
+    border-radius: 3%;
+}
+
+
+.form {
+    background-color: white;
+    width: 40%;
+    padding-top: 2%;
+
+}
+
+.form-input {
+    display: block;
+    margin: 5% 10%;
+    padding-left: 2%;
+    padding-right: 35%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background-color: inherit;
+    color: gray;
+    border-bottom: 5% solid lightgray;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.view-inline {
+    display: inline-block;
+}
+
+.btn-form {
+    color: white;
+    background-color: orange;
+    width: 100%;
+    border: 0px solid black;
+    padding: 5% 0%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    font-size: 18px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.margin-section1 {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.image-reflected {
+    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    width: 30%;
+}
+
+.a-section3 {
+    color: white;
+    background-color: black;
+    padding: 15% 10%;
+    display: block;
+    margin-bottom: 1%;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 0%;
+    
+}
+
+.tabs {
+    width: 20%; margin-left: 5%; text-align: center; margin-top: 0%;
+}
+
+.hr-class {
+    border: none;
+    height: 3px;
+    background-color: orange;
+    margin-right: 80%;
+    margin-left: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.dollar-sign {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.text-pricing {
+    color: white;
+    font-weight: 900;
+    font-size: 72px;
+    text-align: center;
+}
+
+.header-pricing {
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-top: 5px;
+    border-top: 20px solid grey;    
+}
+
+.container-message {
+    background-color: grey;
+    padding: 5% 5%;
+}
+
+.circular-radius {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 5%;
+}
