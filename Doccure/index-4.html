@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Doccure/css/style.css">
+</head>
+  <body>
+    <header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../Doccure/images/Doccure page-2/logo-D7ILE4zi.svg" alt="Doccure Logo" class="site-header__logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto site-header__nav-list">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Doctors</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Patients</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                     <li class="nav-item"><a class="nav-link site-header__nav-link" href="#">Pharmacy</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                </ul>
+
+                <div class="site-header__actions">
+                    <a href="#" aria-label="Search">
+                      <i class="fa-solid fa-search"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Theme Settings">
+                      <i class="fa-solid fa-sun"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Rocket">
+                      <i class="fa-solid fa-rocket"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Notifications">
+                        <i class="fa-solid fa-message"></i>
+                        <span class="site-header__notification-dot site-header__notification-dot--red"></span>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="site-header__notification-dot site-header__notification-dot--purple"></span>
+                    </a>
+                    <a href="#" class="site-header__user-profile" aria-label="User Profile">
+                        <img src="../Doccure/images/Doccure page-2/doctor-thumb-02-Cbbh6L4C.jpg" alt="User profile picture" class="site-header__user-avatar">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-header__title">Dashboard</h1>
+        
+        <nav aria-label="breadcrumb" class="page-header__breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+
+    <section class="container d-flex profile-page">
+         <div class="col-lg-3">
+        <aside class="profile-sidebar mt-5">
+            <div class="card profile-sidebar__card">
+                <div class="profile-sidebar__header"></div>
+                <div class="profile-sidebar__avatar-wrapper">
+                    <img src="../Doccure/images/Doccure page-2/doctor-thumb-02-Cbbh6L4C.jpg" alt="Dr Edalin Hendry" class="profile-sidebar__avatar">
+                    <div class="profile-sidebar__verified-badge"><i class="fa-solid fa-check"></i></div>
+                </div>
+                <div class="profile-sidebar__body">
+                    <h4 class="profile-sidebar__name">Dr Edalin Hendry</h4>
+                    <p class="profile-sidebar__specialty">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                    <span class="profile-sidebar__tag"><span class="dot"></span>Dentist</span>
+                </div>
+            </div>
+            <div class="card profile-sidebar__card p-3">
+                <div class="mb-2">
+                    <label for="availability" class="form-label">Availability <span class="text-danger">*</span></label>
+                    <select class="form-select" id="availability">
+                        <option selected>I am Available Now</option>
+                        <option>Unavailable</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card profile-sidebar__card p-3">
+                <nav class="dashboard-nav">
+                    <ul class="dashboard-nav__list">
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link dashboard-nav__link--active"><i class="fas fa-th-large"></i>Dashboard</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-clipboard-check"></i>Requests <span class="dashboard-nav__notification">2</span></a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-calendar-days"></i>Appointments</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-calendar-check"></i>Available Timings</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-users"></i>My Patients</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-clock"></i>Specialties & Services</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-star"></i>Reviews</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-user-friends"></i>Accounts</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-file-lines"></i>Invoices</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-gear"></i>Payout Settings</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-comments"></i>Message <span class="dashboard-nav__notification">7</span></a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-shield-halved"></i>Profile Settings</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-user-friends"></i>Social Media</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-key"></i>Change Password</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    </div>
+    <div class="col-lg-10">
+        <div class="container py-5">
+<div class="row g-4">
+<div class="col-lg-4">
+<div class="d-flex flex-column gap-4">
+<article class="card summary-card">
+<div class="d-flex justify-content-between align-items-start">
+<div>
+<h2 class="h6 summary-card__title">Total Patient</h2>
+<p class="summary-card__count">978</p>
+<p class="summary-card__trend summary-card__trend--up mb-0"><i class="fas fa-arrow-up"></i> 15% From Last Week</p>
+</div>
+<div class="summary-card__icon-wrapper"><i class="fas fa-user-injured"></i></div>
+</div>
+</article>
+<article class="card summary-card">
+<div class="d-flex justify-content-between align-items-start">
+<div>
+<h2 class="h6 summary-card__title">Patients Today</h2>
+<p class="summary-card__count">80</p>
+<p class="summary-card__trend summary-card__trend--down mb-0"><i class="fas fa-arrow-down"></i> 15% From Yesterday</p>
+</div>
+<div class="summary-card__icon-wrapper"><i class="fas fa-user-clock"></i></div>
+</div>
+</article>
+<article class="card summary-card">
+<div class="d-flex justify-content-between align-items-start">
+<div>
+<h2 class="h6 summary-card__title">Appointments Today</h2>
+<p class="summary-card__count">50</p>
+<p class="summary-card__trend summary-card__trend--up mb-0"><i class="fas fa-calendar-day"></i> 20% From Yesterday</p>
+</div>
+<div class="summary-card__icon-wrapper"><i class="fas fa-calendar-check"></i></div>
+</div>
+</article>
+</div>
+</div>
+<div class="col-lg-8">
+<div class="card appointment-list">
+<header class="appointment-list__header d-flex justify-content-between align-items-center">
+<h2 class="appointment-list__title mb-0">Appointment</h2>
+<select class="form-select w-auto appointment-list__filter">
+<option selected>Last 7 Days</option>
+<option>Last 30 Days</option>
+</select>
+</header>
+<ul class="appointment-list__items">
+<li class="appointment-list__item">
+<div class="appointment-list__patient-info">
+<img src="../Doccure/images/Doccure-4/profile-01-DT2Z6e8O.jpg" alt="Avatar of Adrian Marshall" class="appointment-list__avatar">
+<div>
+<span class="appointment-list__id">#Apt0001</span>
+<h3 class="h6 appointment-list__name">Adrian Marshall</h3>
+</div>
+</div>
+<div class="appointment-list__time">
+<span class="appointment-list__date d-block">11 Nov 2025 10.45 AM</span>
+<span class="appointment-list__tag">General</span>
+</div>
+<div class="appointment-list__actions">
+<a href="#" class="action-button action-button--accept" aria-label="Accept"><i class="fas fa-check"></i></a>
+<a href="#" class="action-button action-button--reject" aria-label="Reject"><i class="fas fa-times"></i></a>
+</div>
+</li>
+<li class="appointment-list__item">
+<div class="appointment-list__patient-info">
+<img src="../Doccure/images/Doccure-4/profile-02-CfwraHe7.jpg" alt="Avatar of Kelly Stevens" class="appointment-list__avatar">
+<div>
+<span class="appointment-list__id">#Apt0002</span>
+<h3 class="h6 appointment-list__name">Kelly Stevens</h3>
+</div>
+</div>
+<div class="appointment-list__time">
+<span class="appointment-list__date d-block">10 Nov 2025 11.00 AM</span>
+<span class="appointment-list__tag">Clinic Consulting</span>
+</div>
+<div class="appointment-list__actions">
+<a href="#" class="action-button action-button--accept" aria-label="Accept"><i class="fas fa-check"></i></a>
+<a href="#" class="action-button action-button--reject" aria-label="Reject"><i class="fas fa-times"></i></a>
+</div>
+</li>
+<li class="appointment-list__item">
+<div class="appointment-list__patient-info">
+<img src="../Doccure/images/Doccure-4/profile-03-ComJhJvI.jpg" alt="Avatar of Samuel Anderson" class="appointment-list__avatar">
+<div>
+<span class="appointment-list__id">#Apt0003</span>
+<h3 class="h6 appointment-list__name">Samuel Anderson</h3>
+</div>
+</div>
+<div class="appointment-list__time">
+<span class="appointment-list__date d-block">03 Nov 2025 02.00 PM</span>
+<span class="appointment-list__tag">General</span>
+</div>
+<div class="appointment-list__actions">
+<a href="#" class="action-button action-button--accept" aria-label="Accept"><i class="fas fa-check"></i></a>
+<a href="#" class="action-button action-button--reject" aria-label="Reject"><i class="fas fa-times"></i></a>
+</div>
+</li>
+<li class="appointment-list__item">
+<div class="appointment-list__patient-info">
+<img src="../Doccure/images/Doccure-4/profile-04-CEtoD4p6.jpg" alt="Avatar of Catherine Griffin" class="appointment-list__avatar">
+<div>
+<span class="appointment-list__id">#Apt0004</span>
+<h3 class="h6 appointment-list__name">Catherine Griffin</h3>
+</div>
+</div>
+<div class="appointment-list__time">
+<span class="appointment-list__date d-block">01 Nov 2025 04.00 PM</span>
+<span class="appointment-list__tag">Clinic Consulting</span>
+</div>
+<div class="appointment-list__actions">
+<a href="#" class="action-button action-button--accept" aria-label="Accept"><i class="fas fa-check"></i></a>
+<a href="#" class="action-button action-button--reject" aria-label="Reject"><i class="fas fa-times"></i></a>
+</div>
+</li>
+<li class="appointment-list__item">
+<div class="appointment-list__patient-info">
+<img src="../Doccure/images/Doccure-4/profile-05-C4xc7dns.jpg" alt="Avatar of Robert Hutchinson" class="appointment-list__avatar">
+<div>
+<span class="appointment-list__id">#Apt0005</span>
+<h3 class="h6 appointment-list__name">Robert Hutchinson</h3>
+</div>
+</div>
+<div class="appointment-list__time">
+<span class="appointment-list__date d-block">28 Oct 2025 05.30 PM</span>
+<span class="appointment-list__tag">General</span>
+</div>
+<div class="appointment-list__actions">
+<a href="#" class="action-button action-button--accept" aria-label="Accept"><i class="fas fa-check"></i></a>
+<a href="#" class="action-button action-button--reject" aria-label="Reject"><i class="fas fa-times"></i></a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="container py-5">
+<div class="row g-4">
+<div class="col-lg-4">
+<div class="d-flex flex-column gap-4">
+<div class="card weekly-overview">
+<div class="card-header">
+<h3 class="card-title">Weekly Overview Mar 14 - Mar 21</h3>
+</div>
+<div class="card-body">
+<ul class="nav nav-tabs weekly-overview__tabs">
+<li class="nav-item"><a class="nav-link active" href="#">Revenue</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Appointments</a></li>
+</ul>
+<div class="mt-3">
+<div class="chart-container">
+<div class="chart-bar" style="height: 55%;"></div>
+<div class="chart-bar" style="height: 48%;"></div>
+<div class="chart-bar" style="height: 18%;"></div>
+<div class="chart-bar" style="height: 45%;"></div>
+<div class="chart-bar" style="height: 35%;"></div>
+<div class="chart-bar" style="height: 48%;"></div>
+<div class="chart-bar" style="height: 65%;"></div>
+</div>
+<div class="chart-labels">
+<div class="chart-axis">M</div><div class="chart-axis">T</div><div class="chart-axis">W</div><div class="chart-axis">T</div><div class="chart-axis">F</div><div class="chart-axis">S</div><div class="chart-axis">S</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card recent-patients">
+<div class="card-header d-flex justify-content-between align-items-center">
+<h3 class="card-title mb-0">Recent Patients</h3>
+<a href="#" class="btn btn-link text-decoration-none">View All</a>
+</div>
+<div class="card-body">
+<div class="row g-3">
+<div class="col-6">
+<div class="patient-card">
+<img src="../Doccure/images/Doccure-4/profile-01-DT2Z6e8O.jpg" alt="Avatar of Adrian Marshall" class="patient-card__avatar">
+<h4 class="h6 patient-card__name">Adrian Marshall</h4>
+<p class="patient-card__id mb-2">Patient ID : P0001</p>
+<hr class="my-1">
+<small class="patient-card__last-visit">Last Appointment<br><strong>15 Mar 2025</strong></small>
+</div>
+</div>
+<div class="col-6">
+<div class="patient-card">
+<img src="../Doccure/images/Doccure-4/profile-02-CfwraHe7.jpg" alt="Avatar of Kelly Stevens" class="patient-card__avatar">
+<h4 class="h6 patient-card__name">Kelly Stevens</h4>
+<p class="patient-card__id mb-2">Patient ID : P0002</p>
+<hr class="my-1">
+<small class="patient-card__last-visit">Last Appointment<br><strong>13 Mar 2025</strong></small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+<div class="d-flex flex-column gap-4">
+<div class="upcoming-appointment">
+<h3 class="h5 upcoming-appointment__title mb-3">Upcoming Appointment</h3>
+<div class="d-flex justify-content-between align-items-center mb-3">
+<div class="d-flex align-items-center gap-3">
+<img src="../Doccure/images/Doccure-4/profile-01-DT2Z6e8O.jpg" alt="Avatar of Adrian Marshall" class="upcoming-appointment__avatar">
+<div>
+<span class="upcoming-appointment__id">#Apt0001</span>
+<h4 class="h6 upcoming-appointment__name mb-0">Adrian Marshall</h4>
+</div>
+</div>
+<div class="text-end">
+<span class="d-block">General visit</span>
+<small class="opacity-75">Today, 10:45 AM</small>
+</div>
+</div>
+<div class="upcoming-appointment__actions">
+<button class="btn upcoming-appointment__action-btn"><i class="fas fa-video me-2"></i>Video Appointment</button>
+<button class="btn upcoming-appointment__action-btn upcoming-appointment__action-btn--primary">Chat Now</button>
+<button class="btn upcoming-appointment__action-btn upcoming-appointment__action-btn--primary">Start Appointment</button>
+</div>
+</div>
+<div class="card recent-invoices">
+<div class="card-header d-flex justify-content-between align-items-center">
+<h3 class="card-title mb-0">Recent Invoices</h3>
+<a href="#" class="btn btn-link text-decoration-none">View All</a>
+</div>
+<div class="card-body">
+<ul class="list-unstyled mb-0">
+<li class="invoice-item">
+<img src="../Doccure/images/Doccure-4/profile-01-DT2Z6e8O.jpg" alt="Avatar of Adrian" class="invoice-item__avatar me-3">
+<div class="me-auto">
+<h4 class="h6 invoice-item__name">Adrian</h4>
+<span class="invoice-item__id">#Apt0001</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Amount</span>
+<span class="invoice-item__value">$450</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Paid On</span>
+<span class="invoice-item__value">11 Nov 2025</span>
+</div>
+<a href="#" class="btn invoice-item__action"><i class="fas fa-eye"></i></a>
+</li>
+ <li class="invoice-item">
+<img src="../Doccure/images/Doccure-4/profile-02-CfwraHe7.jpg" alt="Avatar of Adrian" class="invoice-item__avatar me-3">
+<div class="me-auto">
+<h4 class="h6 invoice-item__name">Kelly</h4>
+<span class="invoice-item__id">#Apt0002</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Amount</span>
+<span class="invoice-item__value">$500</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Paid On</span>
+<span class="invoice-item__value">10 Nov 2025</span>
+</div>
+<a href="#" class="btn invoice-item__action"><i class="fas fa-eye"></i></a>
+</li>
+
+ <li class="invoice-item">
+<img src="../Doccure/images/Doccure-4/profile-03-ComJhJvI.jpg" alt="Avatar of Adrian" class="invoice-item__avatar me-3">
+<div class="me-auto">
+<h4 class="h6 invoice-item__name">Samuel</h4>
+<span class="invoice-item__id">#Apt0003</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Amount</span>
+<span class="invoice-item__value">$320</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Paid On</span>
+<span class="invoice-item__value">03 Nov 2025</span>
+</div>
+<a href="#" class="btn invoice-item__action"><i class="fas fa-eye"></i></a>
+</li>
+
+ <li class="invoice-item">
+<img src="../Doccure/images/Doccure-4/profile-04-CEtoD4p6.jpg" alt="Avatar of Adrian" class="invoice-item__avatar me-3">
+<div class="me-auto">
+<h4 class="h6 invoice-item__name">Catherine</h4>
+<span class="invoice-item__id">#Apt0004</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Amount</span>
+<span class="invoice-item__value">$240</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Paid On</span>
+<span class="invoice-item__value">01 Nov 2025</span>
+</div>
+<a href="#" class="btn invoice-item__action"><i class="fas fa-eye"></i></a>
+</li>
+
+ <li class="invoice-item">
+<img src="../Doccure/images/Doccure-4/profile-05-C4xc7dns.jpg" alt="Avatar of Adrian" class="invoice-item__avatar me-3">
+<div class="me-auto">
+<h4 class="h6 invoice-item__name">Adrian</h4>
+<span class="invoice-item__id">#Apt0001</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Amount</span>
+<span class="invoice-item__value">$450</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Paid On</span>
+<span class="invoice-item__value">11 Nov 2025</span>
+</div>
+<a href="#" class="btn invoice-item__action"><i class="fas fa-eye"></i></a>
+</li>
+
+ <li class="invoice-item">
+<img src="../Doccure/images/Doccure-4/profile-01-DT2Z6e8O.jpg" alt="Avatar of Adrian" class="invoice-item__avatar me-3">
+<div class="me-auto">
+<h4 class="h6 invoice-item__name">Robert</h4>
+<span class="invoice-item__id">#Apt0005</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Amount</span>
+<span class="invoice-item__value">$380</span>
+</div>
+<div class="mx-4 text-center">
+<span class="invoice-item__label d-block">Paid On</span>
+<span class="invoice-item__value">28 Oct 2025</span>
+</div>
+<a href="#" class="btn invoice-item__action"><i class="fas fa-eye"></i></a>
+</li>
+
+</ul>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="container py-5">
+<div class="row g-4">
+<div class="col-lg-6">
+<div class="card notification-widget h-100">
+<div class="card-header d-flex justify-content-between align-items-center" style="height: 100%;">
+<h3 class="card-title mb-0">Notifications</h3>
+<a href="#" class="btn btn-link text-decoration-none">View All</a>
+</div>
+<div class="card-body p-2">
+<ul class="notification-widget__list">
+<li class="notification-widget__item">
+<div class="notification-widget__icon-wrapper" style="background-color: #e0dfff;">
+<i class="fas fa-bell" style="color: #6f42c1;"></i>
+</div>
+<div>
+<p class="notification-widget__text mb-1">Booking Confirmed on <strong>21 Mar 2025</strong> 10:30 AM</p>
+<span class="notification-widget__time">Just Now</span>
+</div>
+</li>
+<li class="notification-widget__item">
+<div class="notification-widget__icon-wrapper" style="background-color: #e6f2ff;">
+<i class="fas fa-star" style="color: #007bff;"></i>
+</div>
+<div>
+<p class="notification-widget__text mb-1">You have a <strong>New Review</strong> for your Appointment</p>
+<span class="notification-widget__time">5 Days ago</span>
+</div>
+</li>
+<li class="notification-widget__item">
+<div class="notification-widget__icon-wrapper" style="background-color: #f8d7da;">
+<i class="fas fa-calendar-check" style="color: #dc3545;"></i>
+</div>
+<div>
+<p class="notification-widget__text mb-1">You have Appointment with <strong>Ahmed</strong> by 01:20 PM</p>
+<span class="notification-widget__time">12:55 PM</span>
+</div>
+</li>
+<li class="notification-widget__item">
+<div class="notification-widget__icon-wrapper" style="background-color: #fff3cd;">
+<i class="fas fa-money-bill-wave" style="color: #ffc107;"></i>
+</div>
+<div>
+<p class="notification-widget__text mb-1">Sent an amount of <strong>$200</strong> for an Appointment by (</p>
+<span class="notification-widget__time">2 Days ago</span>
+</div>
+</li>
+<li class="notification-widget__item">
+<div class="notification-widget__icon-wrapper" style="background-color: #e6f2ff;">
+<i class="fas fa-star" style="color: #007bff;"></i>
+</div>
+<div>
+<p class="notification-widget__text mb-1">You have a <strong>New Review</strong> for your Appointment</p>
+<span class="notification-widget__time">5 Days ago</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card clinic-widget h-100">
+<div class="card-header">
+<h3 class="card-title mb-0">Clinics & Availability</h3>
+</div>
+<div class="card-body d-flex flex-column gap-3">
+<div class="clinic-card">
+<div class="clinic-card__header">
+<div class="clinic-card__info">
+<img src="../Doccure/images/Doccure-4/clinic-02-Dk-Adecs.jpg" alt="Sofi's Clinic" class="clinic-card__image">
+<h4 class="h6 clinic-card__name mb-0">Sofi's Clinic</h4>
+</div>
+<span class="clinic-card__price">$900</span>
+</div>
+<div class="clinic-card__availability">
+<div class="d-flex justify-content-between">
+<div>
+<span class="clinic-card__day">Tue : </span>
+<span class="clinic-card__time">07:00 AM - 09:00 PM</span>
+</div>
+<a href="#" class="clinic-card__change-link">Change</a>
+</div>
+<div class="d-flex justify-content-between">
+<div>
+<span class="clinic-card__day">Wed : </span>
+<span class="clinic-card__time">07:00 AM - 09:00 PM</span>
+</div>
+</div>
+</div>
+</div>
+<div class="clinic-card">
+<div class="clinic-card__header">
+<div class="clinic-card__info">
+<img src="../Doccure/images/Doccure-4/clinic-01-DaCJn46U.jpg" alt="The Family Dentistry Clinic" class="clinic-card__image">
+<h4 class="h6 clinic-card__name mb-0">The Family Dentistry...</h4>
+</div>
+<span class="clinic-card__price">$600</span>
+</div>
+<div class="clinic-card__availability">
+<div class="d-flex justify-content-between">
+<div>
+<span class="clinic-card__day">Sat : </span>
+<span class="clinic-card__time">07:00 AM - 09:00 PM</span>
+</div>
+<a href="#" class="clinic-card__change-link">Change</a>
+</div>
+<div class="d-flex justify-content-between">
+<div>
+<span class="clinic-card__day">Tue : </span>
+<span class="clinic-card__time">07:00 AM - 09:00 PM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+    </div>
+    </section>
+    
+
+
+<footer class="site-footer">
+    <div class="site-footer__main">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Company</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">About</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Features</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Works</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Careers</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Locations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Treatments</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Dental</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Cardiac</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Spinal Cord</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Hair Growth</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Anemia & Disorder</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Specialities</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Transplant</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Cardiologist</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Oncology</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Pediatrics</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Gynacology</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg col-md-6 col-6">
+                    <h5 class="site-footer__widget-title">Utilities</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Pricing</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Contact</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Request A Quote</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Premium Membership</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="site-footer__widget-title">Newsletter</h5>
+                    <p>Subscribe & Stay Updated from the Doccure</p>
+                    <form class="site-footer__newsletter-form">
+                        <input type="email" class="site-footer__newsletter-input" placeholder="Enter Email Address" title="Newsletter Email">
+                        <button type="submit" class="site-footer__newsletter-button">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
+                    </form>
+                    <h5 class="site-footer__widget-title mt-4">Connect With Us</h5>
+                    <ul class="site-footer__social-list">
+                        <li><a href="#" class="site-footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer__bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <p class="site-footer__copyright">&copy; 2025 Doccure. All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 text-center my-3 my-md-0">
+                    <div class="site-footer__legal-links">
+                        <a href="#">Legal Notice</a><span>●</span>
+                        <a href="#">Privacy Policy</a><span>●</span>
+                        <a href="#">Refund Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="site-footer__payment-icons">
+                        <img src="../Doccure/images/Doccure page-2/card-01.svg" alt="Visa payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-02.svg" alt="American Express payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-03.svg" alt="Discover payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-04.svg" alt="Mastercard payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-05.svg" alt="Stripe payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-06.svg" alt="PayPal payment accepted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../Doccure/js/script.js"></script>
+  </body>
+</html>

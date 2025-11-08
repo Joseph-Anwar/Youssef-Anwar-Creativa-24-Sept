@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Doccure/css/style.css">
+</head>
+  <body>
+    <style>
+        body {
+            font-family: poppins, sans-serif;
+        }
+    </style>
+    <header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../Doccure/images/Doccure page-2/logo-D7ILE4zi.svg" alt="Doccure Logo" class="site-header__logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto site-header__nav-list">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Doctors</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Patients</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                     <li class="nav-item"><a class="nav-link site-header__nav-link" href="#">Pharmacy</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                </ul>
+
+                <div class="site-header__actions">
+                    <a href="#" aria-label="Search">
+                      <i class="fa-solid fa-search"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Theme Settings">
+                      <i class="fa-solid fa-sun"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Rocket">
+                      <i class="fa-solid fa-rocket"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Notifications">
+                        <i class="fa-solid fa-message"></i>
+                        <span class="site-header__notification-dot site-header__notification-dot--red"></span>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="site-header__notification-dot site-header__notification-dot--purple"></span>
+                    </a>
+                    <a href="#" class="site-header__user-profile" aria-label="User Profile">
+                        <img src="../Doccure/images/Doccure page-2/doctor-thumb-02-Cbbh6L4C.jpg" alt="User profile picture" class="site-header__user-avatar">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-header__title">Doctor Profile</h1>
+        
+        <nav aria-label="breadcrumb" class="page-header__breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Doctor Profile</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="container d-flex profile-page">
+  
+  <div class="col-lg-4">
+        <aside class="profile-sidebar">
+            <div class="card profile-sidebar__card">
+                <div class="profile-sidebar__header"></div>
+                <div class="profile-sidebar__avatar-wrapper">
+                    <img src="../Doccure/images/Doccure page-2/doctor-thumb-02-Cbbh6L4C.jpg" alt="Dr Edalin Hendry" class="profile-sidebar__avatar">
+                    <div class="profile-sidebar__verified-badge"><i class="fa-solid fa-check"></i></div>
+                </div>
+                <div class="profile-sidebar__body">
+                    <h4 class="profile-sidebar__name">Dr Edalin Hendry</h4>
+                    <p class="profile-sidebar__specialty">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                    <span class="profile-sidebar__tag"><span class="dot"></span>Dentist</span>
+                </div>
+            </div>
+            <div class="card profile-sidebar__card p-3">
+                <div class="mb-2">
+                    <label for="availability" class="form-label">Availability <span class="text-danger">*</span></label>
+                    <select class="form-select" id="availability">
+                        <option selected>I am Available Now</option>
+                        <option>Unavailable</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card profile-sidebar__card p-3">
+                <nav class="dashboard-nav">
+                    <ul class="dashboard-nav__list">
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link dashboard-nav__link--active"><i class="fas fa-th-large"></i>Dashboard</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-clipboard-check"></i>Requests <span class="dashboard-nav__notification">2</span></a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-calendar-days"></i>Appointments</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-calendar-check"></i>Available Timings</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-users"></i>My Patients</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-clock"></i>Specialties & Services</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-star"></i>Reviews</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-user-friends"></i>Accounts</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-file-lines"></i>Invoices</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-gear"></i>Payout Settings</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-comments"></i>Message <span class="dashboard-nav__notification">7</span></a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-shield-halved"></i>Profile Settings</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-user-friends"></i>Social Media</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-key"></i>Change Password</a></li>
+                        <li class="dashboard-nav__item"><a href="#" class="dashboard-nav__link"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    </div>
+
+    <div class="col-lg-8">
+        <main class="profile-content">
+            <h4 class="profile-settings__title mt-5">Profile Settings</h4>
+            <div class="card p-4 mb-4">
+                <ul class="nav nav-tabs profile-settings__tabs" id="profileTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="basic-details-tab" data-bs-toggle="tab" data-bs-target="#basic-details" type="button" role="tab" aria-controls="basic-details" aria-selected="true">Basic Details</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="experience-tab" data-bs-toggle="tab" data-bs-target="#placeholder" type="button" role="tab" aria-controls="placeholder" aria-selected="false">Experience</button>
+                    </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="false">Education</button>
+                    </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="awards-tab" data-bs-toggle="tab" data-bs-target="#placeholder" type="button" role="tab" aria-controls="placeholder" aria-selected="false">Awards</button>
+                    </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="insurances-tab" data-bs-toggle="tab" data-bs-target="#placeholder" type="button" role="tab" aria-controls="placeholder" aria-selected="false">Insurances</button>
+                    </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="clinics-tab" data-bs-toggle="tab" data-bs-target="#placeholder" type="button" role="tab" aria-controls="placeholder" aria-selected="false">Clinics</button>
+                    </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="business-hours-tab" data-bs-toggle="tab" data-bs-target="#placeholder" type="button" role="tab" aria-controls="placeholder" aria-selected="false">Business Hours</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="profileTabContent">
+                <div class="tab-pane fade show active" id="basic-details" role="tabpanel" aria-labelledby="basic-details-tab">
+                    <div class="card p-4 mb-4">
+                        <h5 class="profile-settings__section-title">Profile</h5>
+                        <div class="profile-settings__image-uploader">
+                            <div class="profile-settings__image-preview"><i class="far fa-image"></i></div>
+                            <div>
+                                <h6>Profile Image</h6>
+                                <div class="profile-settings__upload-actions">
+                                    <a href="#">Upload New</a>
+                                    <a href="#" class="remove-link">Remove</a>
+                                </div>
+                                <p class="profile-settings__upload-hint mb-0">Your Image should Below 4 MB, Accepted format jpg,png,svg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4">
+                        <h5 class="profile-settings__section-title">Information</h5>
+                         <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="firstName">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="lastName">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                 <label for="displayName" class="form-label">Display Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="displayName">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="designation" class="form-label">Designation <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="designation">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="phone" class="form-label">Phone Numbers <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="phone">
+                            </div>
+                            
+                             <div class="col-md-4 mb-3">
+                                 <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                              <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tag-input-group">
+                    <label for="knownLanguages" class="tag-input-group__label">Known Languages <span>*</span></label>
+                    <div class="tag-input">
+                        <span class="tag-input__tag">
+                            English
+                            <button class="tag-input__remove-btn" type="button" aria-label="Remove English">&times;</button>
+                        </span>
+                         <span class="tag-input__tag">
+                            German
+                            <button class="tag-input__remove-btn" type="button" aria-label="Remove German">&times;</button>
+                        </span>
+                         <span class="tag-input__tag">
+                            Portugese
+                            <button class="tag-input__remove-btn" type="button" aria-label="Remove Portugese">&times;</button>
+                        </span>
+                        <input type="text" id="knownLanguages" class="tag-input__field" placeholder="Add a tag">
+                        <button class="tag-input__save-btn" type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card p-4">
+                        <h5 class="profile-settings__section-title">Memberships</h5>
+                         <div class="row d-flex">
+                            <div class="col-md-4 mb-2">
+                                <label for="title" class="form-label">Title<span class="text-danger">*</span></label>
+                                <input type="text" placeholder="Add Title"  class="form-control" id="title">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="lastName" class="form-label">About Membership</label>
+                                <input type="text" class="form-control" id="lastName">
+                            </div>
+                            <a href="#" class="col-md-2 delete-link">Delete</a>
+                        </div>
+                        <hr>
+                        <a href="#" class="add-link">Add New</a>
+                    </div>
+                     <div class="button-group">
+        <button type="button" class="button-group__button button-group__button--secondary">Cancel</button>
+        <button type="button" class="button-group__button button-group__button--primary">Save Changes</button>
+    </div>
+
+                </div>
+                <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                      <div class="container">
+        
+
+    <div class="container ">
+        <header class="education-settings__header d-flex justify-content-between align-items-center">
+            <h5 class="profile-settings__section-title">Education</h5>
+            <a href="#" class="education-settings__add-btn">Add New Education</a>
+        </header>
+
+        <div class="accordion education-accordion" id="educationAccordion">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Education
+                        </button>
+                        <div class="education-accordion__actions">
+                            <a href="#" class="education-accordion__delete-btn">Delete</a>
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </div>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#educationAccordion">
+                   <div class="accordion education-accordion" id="educationAccordion">
+            
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#educationAccordion">
+                    <div class="accordion-body">
+                        <form>
+                            <div class="image-uploader">
+                                <div class="image-uploader__preview"><i class="far fa-image"></i></div>
+                                <div>
+                                    <h6 class="form-section-title mb-1">Logo</h6>
+                                    <div class="image-uploader__actions">
+                                        <a href="#">Upload New</a>
+                                        <a href="#" class="remove-link">Remove</a>
+                                    </div>
+                                    <p class="image-uploader__hint mb-0">Your Image should Below 4 MB, Accepted format Jpg,Png,Svg</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="institution" class="form-label">Name of the institution</label>
+                                    <input type="text" class="form-control" id="institution">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="course" class="form-label">Course</label>
+                                    <input type="text" class="form-control" id="course">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="startDate" class="form-label">Start Date <span>*</span></label>
+                                    <div class="date-input">
+                                        <input type="text" class="form-control" id="startDate" value="07-11-2025">
+                                        <i class="fas fa-calendar-alt date-input__icon"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="endDate" class="form-label">End Date <span>*</span></label>
+                                    <div class="date-input">
+                                        <input type="text" class="form-control" id="endDate" value="07-11-2025">
+                                        <i class="fas fa-calendar-alt date-input__icon"></i>
+                                    </div>
+                                </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label for="years" class="form-label">No of Years <span>*</span></label>
+                                    <input type="text" class="form-control" id="years">
+                                </div>
+                                 <div class="col-12 mb-3">
+                                    <label for="description" class="form-label">Description <span>*</span></label>
+                                    <textarea class="form-control" id="description" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                 <button type="reset" class="btn btn-link text-secondary fw-bold text-decoration-none">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+            <div class="accordion education-accordion" id="cambridge-accordion">
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Cambridge (MBBS)
+                        </button>
+                        <div class="education-accordion__actions">
+                            <a href="#" class="education-accordion__delete-btn">Delete</a>
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </div>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#educationAccordion">
+                    <div class="accordion-body">
+                        <form>
+                            <div class="image-uploader">
+                                <div class="image-uploader__preview"><i class="far fa-image"></i></div>
+                                <div>
+                                    <h6 class="form-section-title mb-1">Logo</h6>
+                                    <div class="image-uploader__actions">
+                                        <a href="#">Upload New</a>
+                                        <a href="#" class="remove-link">Remove</a>
+                                    </div>
+                                    <p class="image-uploader__hint mb-0">Your Image should Below 4 MB, Accepted format jpg,png,svg</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="institution2" class="form-label">Name of the institution</label>
+                                    <input type="text" class="form-control" id="institution2" value="Cambridge">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="course2" class="form-label">Course</label>
+                                    <input type="text" class="form-control" id="course2" value="MBBS">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="startDate2" class="form-label">Start Date <span>*</span></label>
+                                    <div class="date-input">
+                                        <input type="text" class="form-control" id="startDate2" value="07-11-2025">
+                                        <i class="fas fa-calendar-alt date-input__icon"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="endDate2" class="form-label">End Date <span>*</span></label>
+                                    <div class="date-input">
+                                        <input type="text" class="form-control" id="endDate2" value="07-11-2025">
+                                        <i class="fas fa-calendar-alt date-input__icon"></i>
+                                    </div>
+                                </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label for="years2" class="form-label">No of Years <span>*</span></label>
+                                    <input type="text" class="form-control" id="years2" value="5">
+                                </div>
+                                 <div class="col-12 mb-3">
+                                    <label for="description2" class="form-label">Description <span>*</span></label>
+                                    <textarea class="form-control" id="description2" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                 <button type="reset" class="btn btn-link text-secondary fw-bold text-decoration-none">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+
+            
+
+        </div>
+                        <div class="form-actions">
+            <button type="button" class="form-actions__button form-actions__button--secondary">Cancel</button>
+            <button type="button" class="form-actions__button form-actions__button--primary">Save Changes</button>
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+
+</section>
+
+<footer class="site-footer">
+    <div class="site-footer__main">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Company</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">About</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Features</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Works</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Careers</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Locations</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Treatments</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Dental</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Cardiac</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Spinal Cord</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Hair Growth</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Anemia & Disorder</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Specialities</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Transplant</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Cardiologist</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Oncology</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Pediatrics</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Gynacology</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg col-md-6 col-6">
+                    <h5 class="site-footer__widget-title">Utilities</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Pricing</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Contact</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Request A Quote</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Premium Membership</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="site-footer__widget-title">Newsletter</h5>
+                    <p>Subscribe & Stay Updated from the Doccure</p>
+                    <form class="site-footer__newsletter-form">
+                        <input type="email" class="site-footer__newsletter-input" placeholder="Enter Email Address" title="Newsletter Email">
+                        <button type="submit" class="site-footer__newsletter-button">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
+                    </form>
+                    <h5 class="site-footer__widget-title mt-4">Connect With Us</h5>
+                    <ul class="site-footer__social-list">
+                        <li><a href="#" class="site-footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer__bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <p class="site-footer__copyright">&copy; 2025 Doccure. All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 text-center my-3 my-md-0">
+                    <div class="site-footer__legal-links">
+                        <a href="#">Legal Notice</a><span>●</span>
+                        <a href="#">Privacy Policy</a><span>●</span>
+                        <a href="#">Refund Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="site-footer__payment-icons">
+                        <img src="../Doccure/images/Doccure page-2/card-01.svg" alt="Visa payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-02.svg" alt="American Express payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-03.svg" alt="Discover payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-04.svg" alt="Mastercard payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-05.svg" alt="Stripe payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-06.svg" alt="PayPal payment accepted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../Doccure/js/script.js"></script>
+  </body>
+</html>

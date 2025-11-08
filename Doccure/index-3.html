@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctor Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Doccure/css/style.css">
+</head>
+  <body>
+    <header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            
+            <a class="navbar-brand" href="#">
+                <img src="../Doccure/images/Doccure page-2/logo-D7ILE4zi.svg" alt="Doccure Logo" class="site-header__logo">
+            </a>
+
+     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+       
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto site-header__nav-list">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Doctors</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Patients</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                     <li class="nav-item"><a class="nav-link site-header__nav-link" href="#">Pharmacy</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle site-header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Sub Menu</a></li></ul>
+                    </li>
+                </ul>
+
+                <div class="site-header__actions">
+                    <a href="#" aria-label="Search">
+                      <i class="fa-solid fa-search"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Theme Settings">
+                      <i class="fa-solid fa-sun"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Rocket">
+                      <i class="fa-solid fa-rocket"></i>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Notifications">
+                        <i class="fa-solid fa-message"></i>
+                        <span class="site-header__notification-dot site-header__notification-dot--red"></span>
+                    </a>
+                    <a href="#" class="site-header__action-item" aria-label="Cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="site-header__notification-dot site-header__notification-dot--purple"></span>
+                    </a>
+                    <a href="#" class="site-header__user-profile" aria-label="User Profile">
+                        <img src="../Doccure/images/Doccure page-2/doctor-thumb-02-Cbbh6L4C.jpg" alt="User profile picture" class="site-header__user-avatar">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-header__title">Doctor Profile</h1>
+        
+        <nav aria-label="breadcrumb" class="page-header__breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Doctor Profile</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<div class="container">
+    <article class="doctor-card">
+        <div class="row g-4">
+            <div class="col-md-9">
+                <div class="d-flex flex-column flex-sm-row gap-4">
+                    <img src="../Doccure/images/Doccure page-2/doctor-thumb-02-Cbbh6L4C.jpg" alt="Portrait of Dr. Darren Elder" class="doctor-card__image">
+                    
+                    <div class="doctor-card__details">
+                        <h2 class="h4 doctor-card__name">Dr. Darren Elder</h2>
+                        <p class="doctor-card__specialty">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                        <p class="doctor-card__specialty-tag mb-2"><i class="fas fa-tooth me-2"></i>Dentist</p>
+                        
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="doctor-card__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i> 
+                            </div>
+                            <span class="ms-2 doctor-card__rating-count">(35)</span>
+                        </div>
+                        
+                        <p class="doctor-card__location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Newyork, USA -</p>
+                        
+                        <div class="doctor-card__gallery mb-3">
+                            <img src="../Doccure/images/Doccure-3/feature-01-CiUCRVgG.jpg" alt="Clinic photo 1" class="doctor-card__gallery-img">
+                            <img src=".//images/Doccure-3/feature-02-CidU_YCh.jpg" alt="Clinic photo 2" class="doctor-card__gallery-img">
+                            <img src="../Doccure/images/Doccure-3/feature-03-CsVmaQqg.jpg" alt="Clinic photo 3" class="doctor-card__gallery-img">
+                            <img src="../Doccure/images/Doccure-3/feature-04-BgySQc8e.jpg" alt="Clinic photo 3" class="doctor-card__gallery-img">
+                        </div>
+
+                        <div class="doctor-card__tags">
+                            <span class="doctor-card__tag">Dental Fillings</span>
+                            <span class="doctor-card__tag">Teeth Whitneing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 d-flex flex-column justify-content-between">
+                <div>
+                    <ul class="doctor-card__info">
+                        <li class="doctor-card__info-item"><i class="fas fa-thumbs-up"></i> 99%</li>
+                        <li class="doctor-card__info-item"><i class="far fa-comment"></i> 35 Feedback</li>
+                        <li class="doctor-card__info-item"><i class="fas fa-map-marker-alt"></i> Newyork, USA</li>
+                        <li class="doctor-card__info-item"><i class="far fa-money-bill-alt"></i> $100 per hour</li>
+                    </ul>
+                    <div class="doctor-card__contact-icons mt-4 mb-4">
+                        <a href="#" class="doctor-card__contact-icon" aria-label="Bookmark"><i class="far fa-bookmark"></i></a>
+                        <a href="#" class="doctor-card__contact-icon" aria-label="Chat"><i class="far fa-comment"></i></a>
+                        <a href="#" class="doctor-card__contact-icon" aria-label="Call"><i class="fas fa-phone-alt"></i></a>
+                        <a href="#" class="doctor-card__contact-icon" aria-label="Video Call"><i class="fas fa-video"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="doctor-card__book-btn">Book Appointment</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+ <div class="container">
+        <div class="profile-tabs">
+            <ul class="nav nav-tabs profile-tabs__nav" id="profileTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="locations-tab" data-bs-toggle="tab" data-bs-target="#locations" type="button" role="tab" aria-controls="locations" aria-selected="false">Locations</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="business-hours-tab" data-bs-toggle="tab" data-bs-target="#business-hours" type="button" role="tab" aria-controls="business-hours" aria-selected="false">Business Hours</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="profileTabContent">
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <section class="profile-tabs__section">
+                        <h3 class="profile-tabs__title">About Me</h3>
+                        <p class="profile-tabs__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </section>
+
+                    <section class="profile-tabs__section">
+                        <h3 class="profile-tabs__title">Education</h3>
+                        <ul class="education-timeline">
+                            <li class="education-timeline__item">
+                                <h5 class="h6 education-timeline__title">American Dental Medical University</h5>
+                                <p class="education-timeline__degree mb-1">BDS</p>
+                                <p class="education-timeline__period mb-0">1998 - 2003</p>
+                            </li>
+                            <li class="education-timeline__item">
+                                <h5 class="h6 education-timeline__title">American Dental Medical University</h5>
+                                <p class="education-timeline__degree mb-1">MDS</p>
+                                <p class="education-timeline__period mb-0">2003 - 2005</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                     <section class="profile-tabs__section">
+                        <h3 class="profile-tabs__title">Work & Experience</h3>
+                        <ul class="education-timeline">
+                            <li class="education-timeline__item">
+                                <h5 class="h6 education-timeline__title">Glowing Smiles Family Dental Clinic</h5>
+                                <p class="education-timeline__degree mb-1">2010 - Present (5 years)</p>
+                                
+                            </li>
+                            <li class="education-timeline__item">
+                                <h5 class="h6 education-timeline__title">Comfort Care Dental Clinic</h5>
+                                <p class="education-timeline__degree mb-1">2007 - 2010 (3 years)</p>
+                                
+                            </li>
+                            <li class="education-timeline__item">
+                                <h5 class="h6 education-timeline__title">Dream Smile Dental Practice</h5>
+                                <p class="education-timeline__degree mb-1">2005 - 2007 (2 years)</p>
+                                
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="profile-tabs__section">
+                        <h3 class="profile-tabs__title">Awards</h3>
+                        <ul class="education-timeline">
+                            <li class="education-timeline__item">
+                                <h5 class="h6 education-timeline__title">Humanitarian Award</h5>
+                                <p class="education-timeline__degree mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                
+                            </li>
+                            <li class="education-timeline__item">
+                                <h5 class="h6 education-timeline__title">Certificate for International Volunteer Service</h5>
+                                <p class="education-timeline__degree mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                
+                            </li>
+                            <li class="education-timeline__item">
+                                <h5 class="h6 education-timeline__title">The Dental Professional of The Year Award</h5>
+                                <p class="education-timeline__degree mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+    <div class="container">
+        <h2 class="speciality-list__section-title">Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="speciality-list__group">
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Tooth cleaning</span>
+                    </li>
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Composite Bonding</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="speciality-list__group">
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Root Canal Therapy</span>
+                    </li>
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Fissure Sealants</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="speciality-list__group">
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Implants</span>
+                    </li>
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Surgical Extractions</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="speciality-list__section-title mt-5">Specializations</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="speciality-list__group">
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Children Care</span>
+                    </li>
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Orthodontist</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="speciality-list__group">
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Dental Care</span>
+                    </li>
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Periodontist</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="speciality-list__group">
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Oral and Maxillofacial Surgery</span>
+                    </li>
+                    <li class="speciality-list__item">
+                        <i class="fas fa-chevron-right speciality-list__icon"></i>
+                        <span class="speciality-list__text">Prosthodontics</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                </div>
+                <div class="tab-pane fade" id="locations" role="tabpanel" aria-labelledby="locations-tab">
+                      <div class="card clinic-card mb-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="h5 clinic-card__name">Smile Cute Dental Care Center</h2>
+                <p class="clinic-card__specialty">MDS - Periodontology and Oral Implantology, BDS</p>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="clinic-card__rating">
+                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(4)</span>
+                </div>
+                <p class="clinic-card__address mb-1">
+                    <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                    2286 Sundown Lane, Austin, Texas 78749, USA
+                </p>
+                <a href="#" class="clinic-card__directions-link d-block mb-3">Get Directions</a>
+                <div class="doctor-card__gallery mb-3">
+                            <img src="../Doccure/images/Doccure-3/patient-BuCIyGRS.jpg" alt="Clinic photo 1" class="doctor-card__gallery-img">
+                            <img src=".//images/Doccure-3/patient1-DEWlLjfN.jpg" alt="Clinic photo 2" class="doctor-card__gallery-img">
+                            <img src="../Doccure/images/Doccure-3/patient-BuCIyGRS.jpg" alt="Clinic photo 3" class="doctor-card__gallery-img">
+                            <img src="../Doccure/images/Doccure-3/doctor-thumb-02-Cbbh6L4C.jpg" alt="Clinic photo 3" class="doctor-card__gallery-img">
+                        </div>
+            </div>
+            <div class="col-lg-3 mt-4 mt-lg-0">
+                <div class="clinic-card__hours-group">
+                    <strong class="clinic-card__hours-days">Mon - Sat</strong>
+                    <span class="clinic-card__hours-time">10:00 AM - 2:00 PM</span>
+                    <span class="clinic-card__hours-time">4:00 PM - 9:00 PM</span>
+                </div>
+                 <div class="clinic-card__hours-group">
+                    <strong class="clinic-card__hours-days">Sun</strong>
+                    <span class="clinic-card__hours-time">10:00 AM - 2:00 PM</span>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-4 mt-lg-0">
+                <div class="clinic-card__price">$250</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card clinic-card">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="h5 clinic-card__name">The Family Dentistry Clinic</h2>
+                <p class="clinic-card__specialty">MDS - Periodontology and Oral Implantology, BDS</p>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="clinic-card__rating">
+                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
+                    </div>
+                    <span class="ms-2">(4)</span>
+                </div>
+                <p class="clinic-card__address mb-1">
+                    <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                    2883 University Street, Seattle, Texas Washington, 98155
+                </p>
+                <a href="#" class="clinic-card__directions-link d-block mb-3">Get Directions</a>
+                 <div class="doctor-card__gallery mb-3">
+                            <img src="../Doccure/images/Doccure-3/doctor-thumb-02-Cbbh6L4C.jpg" alt="Clinic photo 1" class="doctor-card__gallery-img">
+                            <img src=".//images/Doccure-3/feature-02-CidU_YCh.jpg" alt="Clinic photo 2" class="doctor-card__gallery-img">
+                            <img src="../Doccure/images/Doccure-3/feature-01-CiUCRVgG.jpg" alt="Clinic photo 3" class="doctor-card__gallery-img">
+                            <img src="../Doccure/images/Doccure-3/feature-02-CidU_YCh.jpg" alt="Clinic photo 3" class="doctor-card__gallery-img">
+                        </div>
+            </div>
+            <div class="col-lg-3 mt-4 mt-lg-0">
+                 <div class="clinic-card__hours-group">
+                    <strong class="clinic-card__hours-days">Tue - Fri</strong>
+                    <span class="clinic-card__hours-time">11:00 AM - 1:00 PM</span>
+                    <span class="clinic-card__hours-time">6:00 PM - 11:00 PM</span>
+                </div>
+                 <div class="clinic-card__hours-group">
+                    <strong class="clinic-card__hours-days">Sat - Sun</strong>
+                    <span class="clinic-card__hours-time">8:00 AM - 10:00 AM</span>
+                    <span class="clinic-card__hours-time">3:00 PM - 7:00 PM</span>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-4 mt-lg-0">
+                <div class="clinic-card__price">$350</div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <div class="reviews-section">
+    <article class="review-item">
+        <header class="review-item__header">
+            <div class="review-item__author">
+                <img src="../Doccure/images/Doccure-3/patient-BuCIyGRS.jpg" alt="Avatar of Richard Wilson" class="review-item__avatar">
+                <div>
+                    <h5 class="review-item__author-name">Richard Wilson</h5>
+                    <p class="review-item__date mb-0">Reviewed 2 Days Ago</p>
+                </div>
+            </div>
+            <div class="review-item__rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+        </header>
+        <div class="review-item__body">
+            <p class="review-item__recommendation"><i class="fas fa-thumbs-up"></i> I recommend the doctor</p>
+            <p class="review-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Curabitur non nulla sit amet nisl tempus.</p>
+        </div>
+        <footer class="review-item__footer">
+            <a href="#" class="review-item__reply-link"><i class="fas fa-reply"></i> Reply</a>
+            <div class="review-item__actions">
+                <span>Recommend?</span>
+                <button class="review-item__action-btn"><i class="fas fa-thumbs-up me-2"></i>Yes</button>
+                <button class="review-item__action-btn"><i class="fas fa-thumbs-down me-2"></i>No</button>
+            </div>
+        </footer>
+    </article>
+
+    <article class="review-item-dashed ms-5">
+        <header class="review-item__header">
+            <div class="review-item__author">
+                <img src="../Doccure/images/Doccure-3/patient1-DEWlLjfN.jpg" alt="Avatar of Charlene Reed" class="review-item__avatar">
+                <div>
+                    <h5 class="review-item__author-name">Charlene Reed</h5>
+                    <p class="review-item__date mb-0">Reviewed 3 Days Ago</p>
+                </div>
+            </div>
+            <div class="review-item__rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </div>
+        </header>
+        <div class="review-item__body">
+            <p class="review-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Curabitur non nulla sit amet nisl tempus.</p>
+        </div>
+        <footer class="review-item__footer">
+            <a href="#" class="review-item__reply-link"><i class="fas fa-reply"></i> Reply</a>
+            <div class="review-item__actions">
+                <span>Recommend?</span>
+                <button class="review-item__action-btn"><i class="fas fa-thumbs-up me-2"></i>Yes</button>
+                <button class="review-item__action-btn"><i class="fas fa-thumbs-down me-2"></i>No</button>
+            </div>
+        </footer>
+    </article>
+
+    <article class="review-item">
+        <header class="review-item__header">
+            <div class="review-item__author">
+                <img src="../Doccure/images/Doccure-3/patient2-DalkAckJ.jpg" alt="Avatar of Travis Trimble" class="review-item__avatar">
+                <div>
+                    <h5 class="review-item__author-name">Travis Trimble</h5>
+                    <p class="review-item__date mb-0">Reviewed 4 Days Ago</p>
+                </div>
+            </div>
+            <div class="review-item__rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </div>
+        </header>
+        <div class="review-item__body">
+            <p class="review-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Curabitur non nulla sit amet nisl tempus.</p>
+        </div>
+        <footer class="review-item__footer">
+            <a href="#" class="review-item__reply-link"><i class="fas fa-reply"></i> Reply</a>
+            <div class="review-item__actions">
+                <span>Recommend?</span>
+                <button class="review-item__action-btn"><i class="fas fa-thumbs-up me-2"></i>Yes</button>
+                <button class="review-item__action-btn"><i class="fas fa-thumbs-down me-2"></i>No</button>
+            </div>
+        </footer>
+    </article>
+
+    <button class="doctor-card__book-btn m-auto">Show all feedback (167)</button>
+</div>
+
+<div class="review-form">
+    <form class=" mt-5">
+        <header class="review-form__header">
+            <div>
+                <h2 class="review-form__title">Write a review for <strong>Dr. Darren Elder</strong></h2>
+                <span class="review-form__subtitle">Review</span>
+            </div>
+            <div class="review-form__rating">
+                <i class="fas fa-star review-form__rating-star" title="5 stars"></i>
+                <i class="fas fa-star review-form__rating-star" title="4 stars"></i>
+                <i class="fas fa-star review-form__rating-star" title="3 stars"></i>
+                <i class="fas fa-star review-form__rating-star" title="2 stars"></i>
+                <i class="fas fa-star review-form__rating-star" title="1 star"></i>
+            </div>
+        </header>
+
+        <div class="review-form__group">
+            <label for="reviewTitle" class="review-form__label">Title of your review</label>
+            <input type="text" id="reviewTitle" class="review-form__input" placeholder="If you could say it in one sentence, what would you say?">
+        </div>
+
+        <div class="review-form__group">
+            <label for="reviewText" class="review-form__label">Your review</label>
+            <textarea id="reviewText" class="review-form__textarea" rows="4"></textarea>
+            <p class="review-form__char-counter">100 characters remaining</p>
+        </div>
+        
+        <hr>
+
+        <div class="review-form__terms">
+            <input type="checkbox" class="form-check-input mt-0" id="termsCheck">
+            <label for="termsCheck">I have read and accept <a href="#" class="review-form__terms-link">Terms & Conditions</a></label>
+        </div>
+
+        <button type="submit" class="review-form__submit-btn">Add Review</button>
+    </form>
+</div>
+
+
+                </div>
+                <div class="tab-pane fade" id="business-hours" role="tabpanel" aria-labelledby="business-hours-tab">
+                    <div class="business-hours">
+    <ul class="business-hours__list">
+        <li class="business-hours__item-border">
+            <div>
+                <div class="business-hours__day">Today</div>
+                <div class="business-hours__date">5 Nov 2019</div>
+            </div>
+            <div class="business-hours__status">
+                <span class="status-badge status-badge--open">Open Now</span>
+                <div class="business-hours__time">07:00 AM - 09:00 PM</div>
+            </div>
+        </li>
+        <li class="business-hours__item">
+            <div class="business-hours__day">Monday</div>
+            <div class="business-hours__status">
+                <div class="business-hours__time">07:00 AM - 09:00 PM</div>
+            </div>
+        </li>
+        <li class="business-hours__item">
+            <div class="business-hours__day">Tuesday</div>
+            <div class="business-hours__status">
+                <div class="business-hours__time">07:00 AM - 09:00 PM</div>
+            </div>
+        </li>
+        <li class="business-hours__item">
+            <div class="business-hours__day">Wednesday</div>
+            <div class="business-hours__status">
+                <div class="business-hours__time">07:00 AM - 09:00 PM</div>
+            </div>
+        </li>
+        <li class="business-hours__item">
+            <div class="business-hours__day">Thursday</div>
+            <div class="business-hours__status">
+                <div class="business-hours__time">07:00 AM - 09:00 PM</div>
+            </div>
+        </li>
+        <li class="business-hours__item">
+            <div class="business-hours__day">Friday</div>
+            <div class="business-hours__status">
+                <div class="business-hours__time">07:00 AM - 09:00 PM</div>
+            </div>
+        </li>
+        <li class="business-hours__item">
+            <div class="business-hours__day">Saturday</div>
+            <div class="business-hours__status">
+                <div class="business-hours__time">07:00 AM - 09:00 PM</div>
+            </div>
+        </li>
+        <li class="business-hours__item">
+            <div class="business-hours__day">Sunday</div>
+            <div class="business-hours__status">
+                <span class="status-badge status-badge--closed">Closed</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+<footer class="site-footer">
+    <div class="site-footer__main">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Company</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">About</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Features</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Works</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Careers</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Locations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Treatments</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Dental</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Cardiac</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Spinal Cord</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Hair Growth</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Anemia & Disorder</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg col-md-4 col-6">
+                    <h5 class="site-footer__widget-title">Specialities</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Transplant</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Cardiologist</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Oncology</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Pediatrics</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Gynacology</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg col-md-6 col-6">
+                    <h5 class="site-footer__widget-title">Utilities</h5>
+                    <ul class="site-footer__nav-list">
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Pricing</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Contact</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Request A Quote</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Premium Membership</a></li>
+                        <li class="site-footer__nav-item"><a href="#" class="site-footer__nav-link">Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="site-footer__widget-title">Newsletter</h5>
+                    <p>Subscribe & Stay Updated from the Doccure</p>
+                    <form class="site-footer__newsletter-form">
+                        <input type="email" class="site-footer__newsletter-input" placeholder="Enter Email Address" title="Newsletter Email">
+                        <button type="submit" class="site-footer__newsletter-button">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
+                    </form>
+                    <h5 class="site-footer__widget-title mt-4">Connect With Us</h5>
+                    <ul class="site-footer__social-list">
+                        <li><a href="#" class="site-footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="site-footer__social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer__bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <p class="site-footer__copyright">&copy; 2025 Doccure. All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 text-center my-3 my-md-0">
+                    <div class="site-footer__legal-links">
+                        <a href="#">Legal Notice</a><span>●</span>
+                        <a href="#">Privacy Policy</a><span>●</span>
+                        <a href="#">Refund Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="site-footer__payment-icons">
+                        <img src="../Doccure/images/Doccure page-2/card-01.svg" alt="Visa payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-02.svg" alt="American Express payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-03.svg" alt="Discover payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-04.svg" alt="Mastercard payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-05.svg" alt="Stripe payment accepted">
+                        <img src="../Doccure/images/Doccure page-2/card-06.svg" alt="PayPal payment accepted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../Doccure/js/script.js"></script>
+  </body>
+</html>
