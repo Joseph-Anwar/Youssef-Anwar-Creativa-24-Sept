@@ -15,6 +15,7 @@
 
       
         body {
+            cursor: none;
             font-family:  'Poppins', sans-serif;
         }
 
@@ -3235,5 +3236,56 @@ body {
     text-decoration: none;
 }
 
+     .custom-cursor {
+            width: 30px;
+            height: 30px;
+            background-color: #007bff;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+
+            transition: transform 0.2s cubic-bezier(0.1, 0.8, 0.2, 0.9);
+        }
 
 
+  
+         .custom-cursor:hover {
+            transform: translate(-50%, -50%) scale(1.5);
+            background-color: rgba(0, 123, 255, 0.5);
+        }
+
+
+          #progress {
+            /* Positioning */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            
+            /* Sizing */
+            height: 50px;
+            width: 50px;
+            
+            /* Hidden by default, made visible with JS */
+            display: none; 
+            
+            /* Center the inner element */
+            place-items: center;
+            
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+         #progress-value {
+            display: grid;
+            height: calc(100% - 6px); /* A bit smaller than the parent */
+            width: calc(100% - 6px);
+            background-color: #ffffff;
+            border-radius: 50%;
+            place-items: center;
+            font-size: 20px;
+            color: #0d2c5a; /* Arrow color */
+        }
