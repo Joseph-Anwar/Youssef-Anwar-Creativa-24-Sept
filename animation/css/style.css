@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.car-track {
+    background-image: url('../images/top-view-straight-road-black-260nw-2642130877.webp');
+    width: 100%;
+    position: absolute;
+}
+
+.car {
+    position: absolute;
+    width: 15%;
+    top: 110px;
+    animation-name: racing;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+
+    
+}
+
+.animation {
+    position: relative;
+}
+
+@keyframes racing {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 100%;
+        
+    }
+
+}
